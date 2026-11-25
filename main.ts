@@ -12,6 +12,8 @@
 //
 // Output: /output/entry.txt berisi persis "486", tanpa trailing newline,
 // supaya byte count = 3 dan gate 1-5 karakter UTF-8 selalu lolos.
+// Revisi: penegasan — "486" ditulis sebagai konstanta bernama ENTRY supaya
+// angka entry tidak tersebar sebagai literal di dua tempat.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, isAbsolute, join, resolve } from "node:path";
